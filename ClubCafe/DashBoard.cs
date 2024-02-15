@@ -13,7 +13,7 @@ namespace ClubCafe
 {
     public partial class DashBoard : Form
     {
-      
+
 
         public DashBoard()
         {
@@ -41,9 +41,7 @@ namespace ClubCafe
 
         private void Close_Click(object sender, EventArgs e)
         {
-           
-            uC_AddItem1.Visible = false;
-            uC_PlaceOrder1.Visible = false;
+
             uC_welcome1.BringToFront();
             uC_welcome1.Visible = true;
             AddItem.Show();
@@ -64,21 +62,20 @@ namespace ClubCafe
 
         private void AddItem_Click(object sender, EventArgs e)
         {
-            uC_welcome1.Visible = false;
-            uC_AddItem1.BringToFront();
-            uC_AddItem1.Visible = true;
+          
+            uC_AddItem3.BringToFront();
+            uC_AddItem3.Visible = true;
             PlaceOrder.Hide();
             UpdateItem.Hide();
             RemoveItem.Hide();
-
+         
 
 
         }
 
         private void DashBoard_Load(object sender, EventArgs e)
         {
-           // uC_AddItem1.Visible = false;
-            uC_PlaceOrder1.Visible = false;
+            
             uC_welcome1.BringToFront();
             uC_welcome1.Visible = true;
 
@@ -86,12 +83,36 @@ namespace ClubCafe
 
         private void PlaceOrder_Click(object sender, EventArgs e)
         {
-            uC_welcome1.Visible=false;
-            uC_PlaceOrder1.BringToFront();
-            uC_PlaceOrder1.Visible = true;
+          
+            uC_PlaceOrder2.BringToFront();
+            uC_PlaceOrder2.Visible = true;
             AddItem.Hide();
             UpdateItem.Hide();
             RemoveItem.Hide();
+          
+
+        }
+
+        private void UpdateItem_Click(object sender, EventArgs e)
+        {
+           
+            uC_UpdateItems1.BringToFront();
+            uC_UpdateItems1.Visible = true;
+            AddItem.Hide();
+            PlaceOrder.Hide();
+            RemoveItem.Hide();
+         
+        }
+
+        private void RemoveItem_Click(object sender, EventArgs e)
+        {
+          
+            uC_RemoveItem2.Visible = true;
+            uC_RemoveItem2.BringToFront();
+            AddItem.Hide();
+            PlaceOrder.Hide();
+            UpdateItem.Hide();
+          
         }
     }
 }

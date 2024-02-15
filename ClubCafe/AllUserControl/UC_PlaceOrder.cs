@@ -101,6 +101,7 @@ namespace ClubCafe.AllUserControl
                 total += int.Parse(Total_box.Text);
 
                 Grand_Toatal.Text = "Rs.  " + total;
+                Quantity_UpDown1.Value = 0;
             }
             else
             {

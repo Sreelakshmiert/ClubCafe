@@ -36,7 +36,6 @@
             Category_box = new ComboBox();
             Item_NameBox = new TextBox();
             Price_box = new TextBox();
-            comboBox1 = new ComboBox();
             SuspendLayout();
             // 
             // AddNewItem
@@ -118,19 +117,10 @@
             Price_box.Size = new Size(276, 45);
             Price_box.TabIndex = 7;
             // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(801, 555);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(151, 28);
-            comboBox1.TabIndex = 8;
-            // 
             // UC_AddItem
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(comboBox1);
             Controls.Add(Price_box);
             Controls.Add(Item_NameBox);
             Controls.Add(Category_box);
@@ -156,6 +146,5 @@
         private ComboBox Category_box;
         private TextBox Item_NameBox;
         private TextBox Price_box;
-        private ComboBox comboBox1;
     }
 }
